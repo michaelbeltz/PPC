@@ -1,0 +1,108 @@
+<html>
+	<head>
+
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+        <script type="text/javascript" src="2_ppc.js"></script>
+
+		<style>
+			#header{
+				font-size: 75px;
+				background: white;
+				padding: 100px;
+				text-align: center;
+			}
+			#off_header{
+				font-size: 25px;
+				font-weight: bold;
+				padding: 40px;
+				text-align: center;
+			}
+			#on_header{
+				font-size: 25px;
+				font-weight: bold;
+				padding: 40px;
+				text-align: center;
+			}
+			.name{
+				border: solid;
+				background: white;
+				border-width: 1px;
+				text-align: center;
+				font-size: 25px;
+				padding: 10px;
+			}
+			.name:hover{
+				background: lightyellow;
+				cursor: move;
+			}
+			.name.ui-draggable-dragging{
+				background: lightyellow;
+			}
+
+			.name_ppc{
+				border: solid;
+				background: white;
+				border-width: 1px;
+				text-align: center;
+				font-size: 25px;
+				padding: 10px;
+			}
+			.name_ppc:hover{
+				background: lightyellow;
+				cursor: move;
+			}
+			.name_ppc.ui-draggable-dragging{
+				background: lightyellow;
+			}
+
+			.dropit{
+				background: #85B0BE;
+			}
+			.dontdrop{
+				background: lightblue;
+			}
+			.dropnow{
+				background: #5D8896;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div id="header">
+				Party Planning Comittee
+			</div>
+			<br>
+			<div id="body">
+				<div class="row">
+
+					<div class="col-md-2">
+                    </div>
+
+                    <div class="col-md-3" id="off">
+                        <div id="off_header" class="dontdrop">
+                        	Non-PPC
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                    </div>
+
+                    <div class="col-md-3" id="on">
+                        <div id="on_header" class="dontdrop">
+                        	PPC
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                    </div>
+
+                </div>
+			</div>
+		</div>
+	</body>
+</html>
